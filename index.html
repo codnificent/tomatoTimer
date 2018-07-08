@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible"content = "ie=edge">
+	<meta name="theme-color" content="#f9f9f9"/>
+	<title>Tomato Timer</title>
+	<link rel="manifest" href="manifest.json">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div id="header"><br>
+			<p>Boost productivity level with this Tomato Timer</p>
+	</div>
+	<main>
+		<div id="timeArea">
+			<div class="topText">
+				<p id="beastMode"></p>
+			
+			    <button id="resetBtn">Reset</button>
+			</div>
+			<p id="tomatoImage">
+				<img src="images/tomato192.png" alt="Tomato Image" width="20px" height="20px">
+			</p> 
+			<h1 class ="time">25:00</h1>
+			<button id="functionalityBtn">START!</button> 
+		</div>
+
+		<div id="workAndBreak">
+			<div id="workTime">
+				<p class="workText">Work Time</p>
+				<div id="workBox">
+					<button id="work-minus">-</button>
+					<p id="work-Min">25</p>
+					<button id="work-plus">+</button>
+				</div>
+			</div>
+			
+			<div id="breakTime">
+				<p class="breakText">Break Time</p>
+				<div id="breakBox">
+					<button id="break-minus">-</button>
+					<p id="break-Min">5</p>
+					<button id="break-plus">+</button>
+				</div>
+				
+			</div>
+				
+		</div>
+
+		<div id="todaysTomatoes">
+			<p>Your tomatoes today: <span id="tomatoes"></span></p>
+			<button id="clearTomatoes">Clear Tomatoes</button>
+			
+		</div>
+		
+	</main>
+	<footer>
+		<p id="heading">What the heck is <b>Beast Mode?</b></p>
+		<p> AND, how does this app work? Beast mode is... You really wanna know what it is?</p>
+		<button id="answer">YES!</button>
+		<div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">×</span>
+             <img src="images/beastTomato.png" alt="Working like a beast">
+             <p>With this technique, procrastination is terrified already.</p>
+            <p>Beast Mode, you might think, that I made up the concept. But, If you take a good look at it, you would see that it makes sense.</p>
+            <p>Just shut down the social media noises and get productive. That't it. That's what Beast mode is all about.</p>
+            <p>This concept can be applied in so many ways. In the gym, during study session, in your work place, while trying to get good at something, in your coding journey, and so many other ways</p>
+            <p>Give it a try and you would see how much you would improve in a short time. Again, this app is up to help you.</p>
+            <p>Alright. Let's discuss how the app works. The functionality is so simple. It is called the Pomodoro technique. You can read more about it online if you wish</p>
+            <p>The simplest heads up on how the app works is this:
+            </p>
+            <p>Set the work time and/or break time limit of your choice. Click the <b>ACTIVATE BEAST MODE</b> button to enter into the beast mode</p>
+            <p>In this mode, make sure you don't get distracted. When the work time runs out, you can take a short break, depending on the break time limit you've set</p>
+            <p>For each round, you would get a tomato to indicate to you the number of round you've gone for the day.</p>
+            <p>You may wish to reward yourself after the day depending on the number of tomatoes you could complete for the day</p>
+            <p>Also, you should note that whenever you adjust the work time or break time, you should click the <b>Reset</b> button in order to grab the changes</p>
+            <p>And, that's it. Enjoy!</p>
+
+            <p>Wanna get in touch?</p>
+           <a href="https://github.com/codnificent">GitHub</a>
+			<a href="https://twitter.com/aguchibeking">Twitter</a>
+			<a href="https://www.instagram.com/codnificent/">Instagram</a>
+			<a href="https://facebook.com/Aguchibe">Facebook</a>
+
+          </div>
+
+        </div>
+		<p>Copyright &copyKingsley 2018</p>
+	</footer>
+	<script src="idb.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
