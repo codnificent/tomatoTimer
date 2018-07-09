@@ -3,6 +3,8 @@ let startBtn = document.querySelector("#functionalityBtn");
 let resetBtn = document.querySelector("#resetBtn"), time = document.querySelector(".time");
 let mode = document.querySelector("#beastMode"), workMin = document.getElementById("work-Min");
 let breakMin = document.getElementById("break-Min");
+const alert = document.createElement("audio");
+alert.setAttribute("src", "alerts/the-little-dwarf.mp3");
 
 //Declare variables 
 let workTime = 25, breakTime = 5, seconds = 1500, isBreak = true, isPaused = true, countdown = 0;
@@ -30,6 +32,8 @@ function timerFunction(){
   seconds --;
   if(seconds <= 0){
     clearInterval(countdown);
+    alert.currentTime = 0;
+    alert.play();
     seconds = (isBreak ? breakTime : workTime) * 60;
     isBreak = !isBreak;
   }
