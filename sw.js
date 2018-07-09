@@ -1,5 +1,5 @@
 const CACHE_NAME = 'cache_v1';
-let urlsToCache = ['index.html', 'app.js', 'idb.js', 'app.css'];
+let urlsToCache = ['index.html', 'app.js', 'app.css'];
 
 self.addEventListener('install', (event) => {
   // Perform install steps
