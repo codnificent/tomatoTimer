@@ -1,5 +1,5 @@
 const CACHE_NAME = 'cache_v1';
-let urlsToCache = ['/', 'app.js', 'app.css', 'alerts/the-little-dwarf.mp3'];
+let urlsToCache = ['app.js', 'app.css', 'alerts/the-little-dwarf.mp3'];
 
 self.addEventListener('install', (event) => {
   // Perform install steps
