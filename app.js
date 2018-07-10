@@ -4,7 +4,7 @@ let resetBtn = document.querySelector("#resetBtn"), time = document.querySelecto
 let mode = document.querySelector("#beastMode"), workMin = document.getElementById("work-Min");
 let breakMin = document.getElementById("break-Min");
 const alert = document.createElement("audio");
-alert.setAttribute("src", "alerts/the-little-dwarf.mp3");
+alert.setAttribute("src", "the-little-dwarf.mp3");
 
 //Declare variables 
 let workTime = 25, breakTime = 5, seconds = 1500, isBreak = true, isPaused = true, countdown = 0;
